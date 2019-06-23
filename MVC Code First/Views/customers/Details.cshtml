@@ -1,0 +1,42 @@
+﻿@model MVC_Code_First.Models.customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.product.pname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product.pname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.csal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.csal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
